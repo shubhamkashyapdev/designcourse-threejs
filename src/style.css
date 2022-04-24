@@ -11,7 +11,7 @@ body
 {
     height: 100vh;
     font-family: 'Poppins';
-    background-color: rgb(24,24,24);
+    color: #fff;
 }
 
 body {
@@ -21,24 +21,25 @@ body {
 
 .webgl
 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     outline: none;
-    mix-blend-mode: exclusion;
 }
 
-.container {
-    height: 100vh;
+.content {
+    position: absolute;
     display: grid;
     place-content: center;
-}
-h1 {
-    font-size: 8rem;
-    color:#fff;
-    text-transform: uppercase;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
 }
 
-section {
-    height: 100vh;
+h1 {
+    font-size: 5rem;
+    font-weight: lighter;
+    margin-left:-2em;
+
 }
+
